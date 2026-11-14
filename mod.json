@@ -1,0 +1,30 @@
+{
+	"geode": "5.4.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"version": "v1.0.0",
+	"id": "maksim.holdbot",
+	"name": "Hold Bot",
+	"developer": "Maksim",
+	"description": "Bot that plays the level only while you hold the screen.",
+	"tags": ["gameplay", "utility"],
+	"settings": {
+		"mode": {
+			"name": "Mode",
+			"description": "<cy>Off</c> - nothing. <cy>Record</c> - records your inputs, saved when you beat the level. <cy>Hold Play</c> - the bot plays the saved macro only while you hold the screen.",
+			"type": "string",
+			"default": "Off",
+			"one-of": ["Off", "Record", "Hold Play"]
+		},
+		"need-hold": {
+			"name": "Require Holding",
+			"description": "In Hold Play: bot works only while your finger is on the screen. Turn off for a normal full-auto playback.",
+			"type": "bool",
+			"default": true
+		}
+	}
+}
